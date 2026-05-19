@@ -18,4 +18,8 @@ Fix:
 4. Unzip it.
 5. Open the unzipped PongUnity folder from Unity Hub.
 
-When the correct folder is opened, pressing Play should start Pong even if the current scene is still called Untitled.
+When the correct folder is opened, pressing Play should show a PONG menu.
+
+Menu controls:
+- Press 1 for Player vs Computer.
+- Press 2 for Player vs Player.

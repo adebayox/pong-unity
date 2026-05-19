@@ -4,9 +4,12 @@ A complete beginner-friendly 2D Pong project for Unity.
 
 ## What is included
 - A self-contained Unity project folder.
-- Runtime scripts for paddles, ball movement, bounces, scoring, and reset behavior.
+- Runtime scripts for a real Pong loop: mode select, paddles, ball movement, bounces, scoring, win state, rematches, and reset behavior.
+- Two playable modes:
+  - Player vs Computer
+  - Player vs Player on the same keyboard
 - An editor setup script that creates the playable scene automatically when the project opens in Unity.
-- A runtime bootstrap, so even pressing Play in Unity's default empty scene starts Pong.
+- A runtime bootstrap, so even pressing Play in Unity's default empty scene shows the Pong menu.
 - No imported art or paid assets. Everything is generated from simple Unity objects.
 
 ## How to open it
@@ -31,10 +34,19 @@ If you still only see Unity's default sky/ground view after pressing Play, check
 If those folders are missing, Unity opened the wrong or incomplete folder. Close Unity, delete that copied `PongUnity` folder from the other laptop, then send/open the updated full `PongUnity` folder again.
 
 ## Controls
-- Left paddle: `W` / `S`
-- Right paddle: `Up Arrow` / `Down Arrow`
-- Reset match: `R`
+- Menu: `1` for Player vs Computer, `2` for Player vs Player
+- Player 1: `W` / `S`
+- Player 2: `Up Arrow` / `Down Arrow`
+- Rematch/restart: `R`
+- After game over: `Space` or `Enter` for rematch
+- Return to menu: `M` or `Escape`
 - Quit built player: `Escape`
+
+## Game rules
+- First player to 7 points wins.
+- In Player vs Computer, the right paddle is AI-controlled.
+- In Player vs Player, both paddles are controlled from the keyboard.
+- The ball serves from center after each point.
 
 ## Notes
 - The local machine did not have Unity installed when this was created, so the files are prepared for Unity but could not be opened in-editor here.

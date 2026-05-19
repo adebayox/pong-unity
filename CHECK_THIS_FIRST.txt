@@ -1,0 +1,21 @@
+Before opening this in Unity, the folder must contain these paths:
+
+- Assets/Scripts/PongGame.cs
+- Assets/Scripts/PongBootstrap.cs
+- Assets/Scripts/PongBall.cs
+- Assets/Scripts/PongPaddle.cs
+- Assets/Scripts/PongGoal.cs
+- Assets/Scripts/PongVelocity.cs
+- Assets/Editor/PongSceneBuilder.cs
+- Packages/manifest.json
+
+If Unity opens and the Project panel only shows MobileDependencyResolver and Resources, the wrong/incomplete folder was opened.
+
+Fix:
+1. Close Unity.
+2. Delete the copied PongUnity folder from the Unity laptop.
+3. Send the zipped project again.
+4. Unzip it.
+5. Open the unzipped PongUnity folder from Unity Hub.
+
+When the correct folder is opened, pressing Play should start Pong even if the current scene is still called Untitled.
